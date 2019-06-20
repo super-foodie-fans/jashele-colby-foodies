@@ -7,7 +7,7 @@
 This app contains two user types:
 <li>A professional chef (who has the ability to log in) and </li>
 <li>A single user (no need to log in so no need for user data to be persisted on this user type) who can view portfolios. </li>
-
+<br /><br />
 
 <b>*Onboarding Process</b> - <br />
 For a professional chef. Include their location and contact info for people to reach them. 
