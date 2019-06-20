@@ -5,6 +5,11 @@
   font-display: swap;
   src: local('Karla'), local('Karla-Regular'), url(https://fonts.gstatic.com/s/karla/v7/qkBbXvYC6trAT7RVLtk.ttf) format('truetype');
 }
+body {
+  display: flex;
+  background: #1E0606;
+  color: #FEFBDD;
+}
 .header {
   font-size: 70px;
   background: #FFD02B;
@@ -29,6 +34,9 @@
   width: 64px;
   height: 0px;
   border: 3px solid #FEFBDD;
+}
+.header .navigation {
+  display: none;
 }
 .slider {
   position: relative;
