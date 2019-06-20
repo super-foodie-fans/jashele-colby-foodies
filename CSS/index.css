@@ -1,24 +1,104 @@
 @font-face {
-  font-family: 'PT Sans';
-  font-style: italic;
-  font-weight: 400;
-  src: local('PT Sans Italic'), local('PTSans-Italic'), url(https://fonts.gstatic.com/s/ptsans/v10/jizYRExUiTo99u79D0e0x8mN.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'PT Sans';
-  font-style: italic;
-  font-weight: 700;
-  src: local('PT Sans Bold Italic'), local('PTSans-BoldItalic'), url(https://fonts.gstatic.com/s/ptsans/v10/jizdRExUiTo99u79D0e8fOydLxUY.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'PT Sans';
+  font-family: 'Karla';
   font-style: normal;
   font-weight: 400;
-  src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v10/jizaRExUiTo99u79D0KEwA.ttf) format('truetype');
+  font-display: swap;
+  src: local('Karla'), local('Karla-Regular'), url(https://fonts.gstatic.com/s/karla/v7/qkBbXvYC6trAT7RVLtk.ttf) format('truetype');
 }
-@font-face {
-  font-family: 'PT Sans';
+body {
+  display: flex;
+  background: #1E0606;
+  color: #FEFBDD;
+}
+.header {
+  font-size: 70px;
+  background: #FFD02B;
+}
+.header .foodie-text {
+  font-family: Podkova;
+  color: white;
+  font-weight: 800;
+}
+.header .portfolio-text {
+  font-family: Quicksand;
   font-style: normal;
-  font-weight: 700;
-  src: local('PT Sans Bold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/s/ptsans/v10/jizfRExUiTo99u79B_mh0O6tKA.ttf) format('truetype');
+  font-weight: normal;
+}
+.header .menu-icon {
+  width: 85px;
+  height: 60px;
+  background: #FFE177;
+}
+.header .menu-icon .menu-lines {
+  position: absolute;
+  width: 64px;
+  height: 0px;
+  border: 3px solid #FEFBDD;
+}
+.header .navigation {
+  display: none;
+}
+.slider {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+}
+@media (max-width: 500px) {
+  .slider {
+    display: none;
+  }
+}
+.slider .img {
+  display: none;
+}
+.section-title {
+  font-family: Oleo Script;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 70px;
+  text-align: center;
+  color: #F9D96A;
+}
+.divider-lines {
+  width: 100%;
+  height: 15px;
+  background: #F4E666;
+}
+.three-ps {
+  display: flex;
+  justify-content: space-around;
+}
+.three-ps .three-p-title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  text-align: center;
+  color: #FA8755;
+}
+.three-ps .three-p-text {
+  font-family: Karla;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  text-align: center;
+}
+.about-section-content {
+  width: 100%;
+  font-size: 18px;
+}
+.about-section-content .about-section-points {
+  width: 50%;
+  justify-content: space-between;
+  font-weight: 600;
+}
+.features-section {
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.features-section .features-icons {
+  font-size: 36px;
+}
+.features-section .features-content {
+  width: 280px;
 }
