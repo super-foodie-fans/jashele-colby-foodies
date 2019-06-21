@@ -1,7 +1,7 @@
 // index body content
 
 .section-title{
-    font-family: Oleo Script;
+    font-family: 'Oleo Script', cursive;
     font-style: normal;
     font-weight: normal;
     font-size: 70px;
@@ -29,7 +29,6 @@
         }
 
         .three-p-text{
-            font-family: Karla;
             font-style: normal;
             font-weight: normal;
             font-size: 18px;
@@ -67,6 +66,7 @@
     flex-flow: row;
     width:50%;
     margin: auto;
+    font-size: 25px;
 }
 
 .feature-row{
@@ -86,6 +86,7 @@
 .button-section{
     margin:auto;
     display:flex;
+    padding-bottom: 20px;
 
     .live-demo-btn{
         background-color: #fa8755;
@@ -94,6 +95,8 @@
         border-radius: 25px;
         margin: auto;
         font-size: 30px;
+        font-family: Karla;
+        font-weight: 800;
      }   
 }
 
@@ -103,8 +106,23 @@
     display: flex;
     flex-flow: row;
     justify-content: space-between;
+    padding-bottom: 40px;
+
+    .pricing-title{
+        display:flex;
+        justify-content: center;
+        font-weight: 700;
+        text-decoration: underline;
+        font-size: 30px;
+    }
 
     .pricing-box{
         width: 30%;
+        font-weight: 600;
+        font-size: 25px;
+        -webkit-box-shadow: 0px 0px 15px 5px rgba(255,225,119,1);
+        -moz-box-shadow: 0px 0px 15px 5px rgba(255,225,119,1);
+        box-shadow: 0px 0px 15px 5px rgba(255,225,119,1);
+        border-radius: 25px;
     }
 }

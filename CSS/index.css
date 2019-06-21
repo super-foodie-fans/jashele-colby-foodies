@@ -5,20 +5,27 @@
   font-display: swap;
   src: local('Karla'), local('Karla-Regular'), url(https://fonts.gstatic.com/s/karla/v7/qkBbXvYC6trAT7RVLtk.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'Oleo Script';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Oleo Script'), local('OleoScript-Regular'), url(https://fonts.gstatic.com/s/oleoscript/v7/rax5HieDvtMOe0iICsUccChdu0o.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Podkova';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Podkova Regular'), local('Podkova-Regular'), url(https://fonts.gstatic.com/s/podkova/v12/K2FxfZ1EmftJSV9VaJnzIg.ttf) format('truetype');
+}
 body {
   display: flex;
   background: #1E0606;
   color: #FEFBDD;
   width: 900px;
   margin: auto;
-}
-h1 {
-  font-family: Oleo Script;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 70px;
-  display: flex;
-  justify-content: center;
+  font-family: Karla;
 }
 .header {
   font-size: 70px;
@@ -30,6 +37,7 @@ h1 {
   font-family: Podkova;
   color: white;
   font-weight: 800;
+  padding-left: 10px;
 }
 .header .portfolio-text {
   font-family: Quicksand;
@@ -56,7 +64,7 @@ h1 {
   display: none;
 }
 .section-title {
-  font-family: Oleo Script;
+  font-family: 'Oleo Script', cursive;
   font-style: normal;
   font-weight: normal;
   font-size: 70px;
@@ -82,7 +90,6 @@ h1 {
   color: #FA8755;
 }
 .three-ps .three-p-text {
-  font-family: Karla;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -113,6 +120,7 @@ h1 {
   flex-flow: row;
   width: 50%;
   margin: auto;
+  font-size: 25px;
 }
 .feature-row {
   display: flex;
@@ -129,6 +137,7 @@ h1 {
 .button-section {
   margin: auto;
   display: flex;
+  padding-bottom: 20px;
 }
 .button-section .live-demo-btn {
   background-color: #fa8755;
@@ -137,14 +146,73 @@ h1 {
   border-radius: 25px;
   margin: auto;
   font-size: 30px;
+  font-family: Karla;
+  font-weight: 800;
 }
 .pricing-row {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
+  padding-bottom: 40px;
+}
+.pricing-row .pricing-title {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  text-decoration: underline;
+  font-size: 30px;
 }
 .pricing-row .pricing-box {
   width: 30%;
+  font-weight: 600;
+  font-size: 25px;
+  -webkit-box-shadow: 0px 0px 15px 5px #ffe177;
+  -moz-box-shadow: 0px 0px 15px 5px #ffe177;
+  box-shadow: 0px 0px 15px 5px #ffe177;
+  border-radius: 25px;
+}
+.bottom-widgets {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+.bottom-widgets .contact-title {
+  font-size: 35px;
+  font-weight: 700;
+}
+.bottom-widgets .contact-address-phone {
+  text-decoration: none;
+  text-decoration-color: #FFD02B;
+  font-size: 20px;
+}
+.bottom-widgets .contact-address-phone a:link {
+  color: #FFD02B;
+}
+.bottom-widgets .contact-address-phone a:hover {
+  color: #FEFBDD;
+}
+.bottom-widgets .contact-address-phone:link {
+  text-decoration: none;
+  color: #FFD02B;
+}
+.nav-bottom {
+  display: flex;
+  flex-flow: column;
+  text-decoration: none;
+  font-size: 30px;
+  padding-top: 35px;
+}
+.nav-bottom a:link {
+  color: #FFD02B;
+}
+.nav-bottom a:hover {
+  color: #FEFBDD;
+}
+.copyright {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
 .carousel {
   display: flex;
