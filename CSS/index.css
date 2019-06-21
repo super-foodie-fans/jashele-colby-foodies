@@ -107,10 +107,11 @@ body {
 @media (min-width: 1000px) {
   .carousel {
     width: 1000px;
+    height: auto;
   }
 }
 .carousel img {
-  width: 110%;
+  width: 100%;
 }
 .carousel .image-noshow {
   display: none;
@@ -121,10 +122,14 @@ body {
   animation-duration: 1s;
 }
 @keyframes slideShowFade {
+
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
   }
+
+
 }
+
