@@ -1,0 +1,31 @@
+
+.carousel {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+    overflow: hidden;
+    @media(min-width: 1000px){
+      width: 1000px;
+    }
+    
+      img{
+          width: 110%;
+      }
+
+      .image-noshow{
+          display:none;
+      }
+      .image-show{
+          display: visible;
+          animation: slideShowFade;
+          animation-duration: 1s;
+      }
+
+      @keyframes slideShowFade {
+          from {opacity: 0}
+          to {opacity: 1}
+      }
+
+
+}
