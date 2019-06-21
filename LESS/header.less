@@ -8,11 +8,15 @@ body{
     display:flex;
     background: #1E0606;
     color: #FEFBDD;
+    width: 1000px;
+    margin:auto;
 }
 
 .header{
     font-size: 70px;
     background: #FFD02B;
+    display: flex;
+    justify-content: space-between;
 
     .foodie-text{
         font-family: Podkova;
@@ -28,14 +32,20 @@ body{
 
     .menu-icon{
         width: 85px;
-        height: 60px;
+        height: 80px;
         background: #FFE177;
 
+
         .menu-lines{
-            position: absolute;
             width: 64px;
-            height: 0px;
             border: 3px solid #FEFBDD;
+            display: block;
+            unicode-bidi: isolate;
+            margin-block-start: 15px;
+            margin-block-end: 10px;
+            margin-inline-start: auto;
+            margin-inline-end: auto;
+            overflow: hidden;
         }
     }
 
