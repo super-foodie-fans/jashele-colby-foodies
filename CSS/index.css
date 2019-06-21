@@ -12,6 +12,14 @@ body {
   width: 900px;
   margin: auto;
 }
+h1 {
+  font-family: Oleo Script;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 70px;
+  display: flex;
+  justify-content: center;
+}
 .header {
   font-size: 70px;
   background: #FFD02B;
@@ -54,6 +62,8 @@ body {
   font-size: 70px;
   text-align: center;
   color: #F9D96A;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .divider-lines {
   width: 100%;
@@ -97,6 +107,45 @@ body {
 .features-section .features-content {
   width: 280px;
 }
+.about-lists {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row;
+  width: 50%;
+  margin: auto;
+}
+.feature-row {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row;
+}
+.feature-box {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column;
+}
+.button-section {
+  margin: auto;
+  display: flex;
+}
+.button-section .live-demo-btn {
+  background-color: #fa8755;
+  width: 50%;
+  padding: 20px;
+  border-radius: 25px;
+  margin: auto;
+  font-size: 30px;
+}
+.pricing-row {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.pricing-row .pricing-box {
+  width: 30%;
+}
 .carousel {
   display: flex;
   align-items: center;
@@ -107,11 +156,10 @@ body {
 @media (min-width: 1000px) {
   .carousel {
     width: 1000px;
-    height: auto;
   }
 }
 .carousel img {
-  width: 100%;
+  width: 110%;
 }
 .carousel .image-noshow {
   display: none;
@@ -122,14 +170,10 @@ body {
   animation-duration: 1s;
 }
 @keyframes slideShowFade {
-
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
   }
-
-
 }
-
