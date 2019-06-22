@@ -5,9 +5,6 @@
     justify-content: center;
     height: 450px;
     overflow: hidden;
-    @media(min-width: 1000px){
-      width: 1000px;
-    }
     
       img{
           width: 110%;
@@ -27,5 +24,17 @@
           to {opacity: 1}
       }
 
+      @media screen and (max-width: 500px){
+          display:none;
+      }
+}
 
+.mobile-intro{
+    @media screen and (min-width: 0px) and(max-width: 500px) {
+        visibility: visible;
+    }
+
+    @media screen and (min-width: 501px) and (max-width: 1600px){
+        display:none;
+    }
 }
