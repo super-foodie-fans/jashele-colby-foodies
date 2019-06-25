@@ -30,6 +30,29 @@
 .mobile-font {
   font-size: 4rem;
 }
+.section-title {
+  font-family: 'Oleo Script', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8rem;
+  text-align: center;
+  color: #F9D96A;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.divider-lines {
+  width: 100%;
+  height: 15px;
+  background: #F4E666;
+}
+.regular-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 450px;
+  overflow: hidden;
+  width: 900px;
+}
 * {
   font-size: 62.5%;
 }
@@ -52,6 +75,7 @@ body {
   color: white;
   font-weight: 800;
   padding-left: 10px;
+  text-decoration: none;
 }
 .header .portfolio-text {
   font-family: Quicksand;
@@ -452,4 +476,7 @@ body {
   .mobile-intro {
     display: none;
   }
+}
+.about-us-content {
+  font-size: 2rem;
 }
