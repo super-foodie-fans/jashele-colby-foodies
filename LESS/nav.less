@@ -59,6 +59,7 @@
     animation-duration: 1s;
 
     transform: translate(-74%)
+
   }
   .dropdown .dropdown-link {
     width: 100%;
@@ -103,12 +104,30 @@
 }
 
 @keyframes lineone{
-  from {transform: rotate(0deg)}
-  to {transform: rotate(45deg)}
+  from {transform: rotate(0deg) translate(0px, 0px)}
+  to {transform: rotate(-45deg) translate(-10px, 20px)}
 }
 
 @keyframes linetwo{
-  from {transform: rotate(0deg)}
-  to {transform: rotate(-45deg)}
+  from {transform: rotate(0deg) translate(0px, 0px)}
+  to {transform: rotate(45deg) translate(-20px, -15px)}
 }
 
+
+.nav-line-1-active{
+  transform: rotate(-45deg) translate(-10px, 20px);
+}
+
+.nav-line-3-active{
+  transform: rotate(45deg) translate(-20px, -15px);
+}
+
+.nav-line-3-active{
+  display: none;
+}
+
+
+
+.dropdown-X-active{
+  display: none;
+}
