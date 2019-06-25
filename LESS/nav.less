@@ -2,6 +2,18 @@
     z-index: 2;
     cursor: pointer;
   }
+
+  .menu-lines{
+    width: 64px;
+    border: 3px solid #FEFBDD;
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 10%;
+    margin-block-end: 20%;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+}
   .dropdown .dropdown-button {
     box-sizing: border-box;
     padding: .5rem;
@@ -12,23 +24,41 @@
     font-weight: bold;
     width: 85px;
     height: 80px;
-    background-color: #0c0b0b;
+    background-color: #FFE177;
     color: rgb(248, 187, 96);
     border: .1rem solid rgb(231, 223, 210);
   }
   .dropdown .dropdown-button:hover {
-    background-color: #0c0b0b;
+    background-color: #b95503;
     color: rgb(241, 160, 38);
   }
+  
+  @keyframes fadeinmenu {
+    from {opacity: 0}
+    to {opacity: 1}
+  }
+
+  @keyframes slideinmenu {
+    from {transform: translate(0%)}
+    to {transform: translate(-74%)}
+  }
+
   .dropdown .dropdown-content {
-    width: 10%;
+    width: 325px;
     position: absolute;
     box-sizing: border-box;
     background-color: rgb(248, 187, 96);
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10px;
+
+    animation-name: fadeinmenu;
+    animation-duration: 1s;
+
+    animation-name: slideinmenu;
+    animation-duration: 1s;
+
+    transform: translate(-74%)
   }
   .dropdown .dropdown-link {
     width: 100%;
@@ -38,6 +68,10 @@
     text-decoration: none;
     color: rgb(248, 244, 237);
     border-bottom: .1rem solid white;
+
+    @media @mobile{
+     font-size:6rem; 
+    }
   }
   .dropdown .dropdown-link:hover {
     color: #ffffff;
@@ -46,3 +80,35 @@
   .dropdown .dropdown-hidden {
     display: none;
   }
+
+
+.middle-line{
+  animation: disappearline;
+  animation-duration: 1s;
+}
+
+.lineone-translate{
+  animation: lineone;
+  animation-duration: 1s;
+}
+
+.linetwo-translate{
+  animation: linetwo;
+  animation-duration: 1s;
+}
+
+@keyframes disappearline{
+  from {opacity: 1}
+  to {opacity: 0}
+}
+
+@keyframes lineone{
+  from {transform: rotate(0deg)}
+  to {transform: rotate(45deg)}
+}
+
+@keyframes linetwo{
+  from {transform: rotate(0deg)}
+  to {transform: rotate(-45deg)}
+}
+
