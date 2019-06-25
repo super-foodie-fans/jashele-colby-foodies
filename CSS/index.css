@@ -404,9 +404,13 @@ body {
 .bottom-widgets .contact-address-phone a:hover {
   color: #FEFBDD;
 }
-.bottom-widgets .contact-address-phone:link {
+.bottom-widgets .contact-address-phone address {
+  font-size: 3rem;
+}
+.contact-address-phone a:link {
   text-decoration: none;
   color: #FFD02B;
+  font-size: 3rem;
 }
 .nav-bottom {
   display: flex;
