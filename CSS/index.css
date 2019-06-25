@@ -135,6 +135,24 @@ body {
   align-items: center;
   flex-flow: column;
 }
+
+/* created for the pages */
+.feature-page {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row;
+}
+.feature-page-box {
+  margin: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column;
+}
+/* created for the pages */
+
+
 .button-section {
   margin: auto;
   display: flex;
