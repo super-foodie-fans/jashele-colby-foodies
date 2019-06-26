@@ -398,22 +398,14 @@ body {
     transform: translate(0%);
   }
 }
-@keyframes fadeIn {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
 .dropdown .dropdown-animation {
   animation: displayNone;
-  animation: fadeIn 1s ease-in 0s 1 normal forwards;
+  animation: fadeoutmenu;
   animation: slideoutmenu;
   animation-duration: 1s;
 }
 .dropdown .dropdown-hidden {
-  opacity: 0;
+  display: none;
 }
 .bottom-widgets {
   display: flex;
