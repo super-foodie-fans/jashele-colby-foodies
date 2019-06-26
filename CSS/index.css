@@ -90,6 +90,7 @@ body {
 .header .navigation {
   display: none;
 }
+
 .section-title {
   font-family: 'Oleo Script', cursive;
   font-style: normal;
@@ -223,6 +224,7 @@ body {
     padding-bottom: 40px;
   }
 }
+
 .button-section {
   margin: auto;
   display: flex;
@@ -528,11 +530,24 @@ body {
     opacity: 1;
   }
 }
-@media screen and (max-width: 500px) {
-  .carousel {
-    display: none;
-  }
+
+.feature-page {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row;
 }
+.feature-page-box {
+  margin: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column;
+}
+.features-img {
+  text-align: center;
+}
+
 @media screen and (min-width: 0px) and (max-width: 500px) {
   .mobile-intro {
     visibility: visible;
@@ -548,3 +563,4 @@ body {
   margin-left: 3%;
   margin-right: 3%;
 }
+
