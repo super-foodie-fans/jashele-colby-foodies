@@ -7,10 +7,10 @@
  <link rel = "stylesheet"
    type = "text/css"
    href = "CSS/index.css" />
-   <script src="index.js" async></script>
+   <!-- <script src="index.js" async></script> -->
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="shortcut icon" href="images/pancakes.jpeg" />
-   <link rel="stylesheet" type="text/css" href="css\all.min.css"
+   <link rel="stylesheet" type="text/css" href="css\all.min.css">
    <meta name="description" content="Food Portfolio">
    <meta name="keywords" content="Food,Recipes,Chef,Eat,Mobile,Apps,Lambda">
    <meta name="author" content="Jashele Tillman & Colby Howell">
@@ -21,25 +21,35 @@
 
  <body>
 
-    <div class="container">
-
-        <header class="header"><a href="index.html" class="foodie-text">WTFoodie</a>
+  <script defer="defer" src="menu.js"></script>
 
 
-          <div class="menu-icon">
-               <hr class="menu-lines">
-               <hr class="menu-lines"> 
-               <hr class="menu-lines">   
-                   <nav class="navigation">
-                       <a href="about.html">About</a>
-                       <a href="/features">Features</a>
-                       <a href="/demo">Demo</a>
-                       <a href="/pricing">Pricing</a>
-                       <a href="/contact">Contact</a>
-                   </nav>
-           </div>
-           <!-- nav and image slider in here  -->
-      </header>
+
+  <div class="container">
+
+    <header class="header"><a href="index.html" class="foodie-text">WTFoodie</a>
+
+
+
+      <div class="dropdown">
+
+				<div class="dropdown-button dropdown-X">
+          <hr class="menu-lines nav-line-1">
+          <hr class="menu-lines nav-line-2"> 
+          <hr class="menu-lines nav-line-3"> 
+        </div>
+        
+        
+				<div class="dropdown-content dropdown-hidden">
+      
+        <a class="dropdown-link" href="about.html">About</a>
+        <a class="dropdown-link" href="">Features</a>
+        <a class="dropdown-link" href="">Demo</a>
+        <a class="dropdown-link" href="">Pricing</a>
+        <a class="dropdown-link" href="">Contact</a>
+
+				</div>
+   </header>
    
       <!-- <div class="carousel">
        <img class="slide image-show" src="images/wtfoodie.png" />
@@ -50,11 +60,7 @@
        <img class="slide image-noshow" src="images/fork.png" />
      </div> -->
      <div class="regular-header">
-       <img src="F:\Git Repos\jashele-colby-foodies\images\foodie-founders-resized.jpg">
-     </div>
-   
-     <div>
-         <img class="mobile-intro" src="images/wtfoodie.png" />
+       <img src="images\foodie-founders-resized.jpg">
      </div>
 
   <div class="divider-lines"></div>
