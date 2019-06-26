@@ -25,5 +25,18 @@ class Dropdown {
   }
   
   
-  // Nothing to do here, just study what the code is doing and move on to the Dropdown class
+
   let dropdowns = document.querySelectorAll('.dropdown').forEach( dropdown => new Dropdown(dropdown));
+
+
+
+  const toggleMenu = () => {
+    menu.classList.toggle('menu--open')
+  }
+  
+  const menu = document.querySelector('.menu');
+
+  const menuButton = document.querySelector('.menu-button');
+
+  const dropDownBut = document.querySelector('.dropdown-button')
+

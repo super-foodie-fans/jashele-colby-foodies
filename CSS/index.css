@@ -30,6 +30,29 @@
 .mobile-font {
   font-size: 4rem;
 }
+.section-title {
+  font-family: 'Oleo Script', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8rem;
+  text-align: center;
+  color: #F9D96A;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.divider-lines {
+  width: 100%;
+  height: 15px;
+  background: #F4E666;
+}
+.regular-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 450px;
+  overflow: hidden;
+  width: 900px;
+}
 * {
   font-size: 62.5%;
 }
@@ -52,6 +75,7 @@ body {
   color: white;
   font-weight: 800;
   padding-left: 10px;
+  text-decoration: none;
 }
 .header .portfolio-text {
   font-family: Quicksand;
@@ -62,17 +86,6 @@ body {
   width: 85px;
   height: 80px;
   background: #FFE177;
-}
-.header .menu-icon .menu-lines {
-  width: 64px;
-  border: 3px solid #FEFBDD;
-  display: block;
-  unicode-bidi: isolate;
-  margin-block-start: 15px;
-  margin-block-end: 10px;
-  margin-inline-start: auto;
-  margin-inline-end: auto;
-  overflow: hidden;
 }
 .header .navigation {
   display: none;
@@ -285,6 +298,17 @@ body {
   z-index: 2;
   cursor: pointer;
 }
+.menu-lines {
+  width: 64px;
+  border: 3px solid #FEFBDD;
+  display: block;
+  unicode-bidi: isolate;
+  margin-block-start: 10%;
+  margin-block-end: 20%;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  overflow: hidden;
+}
 .dropdown .dropdown-button {
   box-sizing: border-box;
   padding: 0.5rem;
@@ -295,23 +319,42 @@ body {
   font-weight: bold;
   width: 85px;
   height: 80px;
-  background-color: #0c0b0b;
+  background-color: #FFE177;
   color: #f8bb60;
   border: 0.1rem solid #e7dfd2;
 }
 .dropdown .dropdown-button:hover {
-  background-color: #0c0b0b;
+  background-color: #b95503;
   color: #f1a026;
 }
+@keyframes fadeinmenu {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slideinmenu {
+  from {
+    transform: translate(0%);
+  }
+  to {
+    transform: translate(-74%);
+  }
+}
 .dropdown .dropdown-content {
-  width: 10%;
+  width: 325px;
   position: absolute;
   box-sizing: border-box;
   background-color: #f8bb60;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 10px;
+  animation-name: fadeinmenu;
+  animation-name: slideinmenu;
+  animation-duration: 1s;
+  transform: translate(-74%);
 }
 .dropdown .dropdown-link {
   width: 100%;
@@ -322,11 +365,64 @@ body {
   color: #f8f4ed;
   border-bottom: 0.1rem solid white;
 }
+@media ( max-width: 500px ) {
+  .dropdown .dropdown-link {
+    font-size: 6rem;
+  }
+}
 .dropdown .dropdown-link:hover {
   color: #ffffff;
   background-color: #b95503;
 }
 .dropdown .dropdown-hidden {
+  display: none;
+}
+.middle-line {
+  animation: disappearline;
+  animation-duration: 1s;
+}
+.lineone-translate {
+  animation: lineone;
+  animation-duration: 1s;
+}
+.linetwo-translate {
+  animation: linetwo;
+  animation-duration: 1s;
+}
+@keyframes disappearline {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes lineone {
+  from {
+    transform: rotate(0deg) translate(0px, 0px);
+  }
+  to {
+    transform: rotate(-45deg) translate(-10px, 20px);
+  }
+}
+@keyframes linetwo {
+  from {
+    transform: rotate(0deg) translate(0px, 0px);
+  }
+  to {
+    transform: rotate(45deg) translate(-20px, -15px);
+  }
+}
+.nav-line-1-active {
+  transform: rotate(-45deg) translate(-10px, 20px);
+}
+.nav-line-3-active {
+  transform: rotate(45deg) translate(-20px, -15px);
+}
+.nav-line-3-active {
+  display: none;
+}
+.dropdown-X-active {
   display: none;
 }
 .bottom-widgets {
@@ -380,9 +476,13 @@ body {
 .bottom-widgets .contact-address-phone a:hover {
   color: #FEFBDD;
 }
-.bottom-widgets .contact-address-phone:link {
+.bottom-widgets .contact-address-phone address {
+  font-size: 3rem;
+}
+.contact-address-phone a:link {
   text-decoration: none;
   color: #FFD02B;
+  font-size: 3rem;
 }
 .nav-bottom {
   display: flex;
@@ -452,4 +552,39 @@ body {
   .mobile-intro {
     display: none;
   }
+}
+.about-us-content {
+  font-size: 3rem;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+.feature-page {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row;
+}
+.feature-page-box {
+  margin: 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column;
+  font-size: 2.3rem;
+  line-height: 2.7rem;
+}
+.features-img {
+  text-align: center;
+  font-size: 3rem;
+  line-height: 4rem;
+}
+.page-header {
+  font-size: 3rem;
+}
+.page-subheader {
+  font-size: 2.6rem;
+  color: #f7dd4b;
+}
+.copyright {
+  font-size: 2.2rem;
 }
