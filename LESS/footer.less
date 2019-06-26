@@ -4,16 +4,45 @@
     display: flex;
     justify-content: space-around;
     padding-top: 10px;
+
+    @media @mobile{
+        .mobile-flex;
+        align-items: center;
+    }
     
     .contact-title{
-        font-size: 35px;
+        font-size: 3rem;
         font-weight: 700;
+
+        @media @mobile{
+            .mobile-margins;
+            font-size: 5rem;
+        }
     }
 
     .contact-address-phone{
         text-decoration: none;
         text-decoration-color: #FFD02B;
-        font-size: 20px;
+        font-size: 3rem;
+
+        @media @mobile{
+            .mobile-margins;
+            font-size: 5rem;
+            width:100%;
+
+
+            address{
+                font-size: 5rem;
+            }
+
+            a:link{
+                font-size: 5rem;
+            }
+
+            a:hover{
+                font-size: 5rem;
+            }
+        }
 
         a:link{
             color:#FFD02B;
@@ -22,34 +51,49 @@
         a:hover{
             color:#FEFBDD;
         }
-    }
 
-    .contact-address-phone:link{
-        text-decoration: none;
-        color: #FFD02B;
+        address{
+            font-size:3rem;
+        }
     }
+}
+
+.contact-address-phone a:link{
+    text-decoration: none;
+    color: #FFD02B;
+    font-size: 3rem;
+
 }
 
 .nav-bottom{
     display: flex;
     flex-flow: column;
     text-decoration: none;
-    font-size: 30px;
+    font-size:6rem;
     padding-top: 35px;
+
+    @media @mobile{
+        display: none;
+    }
 
     a:link{
         color:#FFD02B;
+        
     }
     
     a:hover{
         color:#FEFBDD;
+    }
+
+    a:visited{
+        color:#FFD02B;
     }
 }
 
 .copyright{
     display: flex;
     justify-content: center;
-
     padding-top: 50px;
     padding-bottom: 20px;
+    font-size: 3rem;
 }
