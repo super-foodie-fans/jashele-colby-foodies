@@ -63,7 +63,6 @@ body {
 .header .navigation {
   display: none;
 }
-
 .section-title {
   font-family: 'Oleo Script', cursive;
   font-style: normal;
@@ -135,7 +134,6 @@ body {
   align-items: center;
   flex-flow: column;
 }
-
 .button-section {
   margin: auto;
   display: flex;
@@ -296,21 +294,3 @@ body {
   }
 }
 
-/* created for the pages by Jashele Tillman */
-.feature-page {
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row;
-}
-.feature-page-box {
-  margin: 1rem;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-flow: column;
-}
-.features-img {
-  text-align: center;
-}
-/* created for the pages */
