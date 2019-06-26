@@ -34,8 +34,8 @@
   }
   
   @keyframes fadeinmenu {
-    from {opacity: 0}
-    to {opacity: 1}
+    from {opacity: 0;}
+    to {opacity: 1;}
   }
 
   @keyframes slideinmenu {
@@ -78,56 +78,82 @@
     color: #ffffff;
     background-color: #b95503;
   }
+
+  @keyframes displayNone{
+    from {display: inherit}
+    to {display: none}
+  }
+
+  @keyframes fadeoutmenu {
+    from {opacity: 1;}
+    to {opacity: 0;}
+  }
+
+  @keyframes slideoutmenu {
+    from {transform: translate(-74%)}
+    to {transform: translate(0%)}
+  }
+
+  @keyframes fadeIn { from { opacity:1; } to { opacity:0; } }
+
+  .dropdown .dropdown-animation{
+    animation: displayNone;
+    animation-duration: 1s;
+    
+    animation:fadeIn 1s ease-in 0s 1 normal forwards;
+
+    animation: slideoutmenu;
+    animation-duration: 1s;
+  }
+
   .dropdown .dropdown-hidden {
-    display: none;
+    opacity: 0;
   }
 
 
-.middle-line{
-  animation: disappearline;
-  animation-duration: 1s;
-}
+// .middle-line{
+//   animation: disappearline;
+//   animation-duration: 1s;
+// }
 
-.lineone-translate{
-  animation: lineone;
-  animation-duration: 1s;
-}
+// .lineone-translate{
+//   animation: lineone;
+//   animation-duration: 1s;
+// }
 
-.linetwo-translate{
-  animation: linetwo;
-  animation-duration: 1s;
-}
+// .linetwo-translate{
+//   animation: linetwo;
+//   animation-duration: 1s;
+// }
 
-@keyframes disappearline{
-  from {opacity: 1}
-  to {opacity: 0}
-}
+// @keyframes disappearline{
+//   from {opacity: 1}
+//   to {opacity: 0}
+// }
 
-@keyframes lineone{
-  from {transform: rotate(0deg) translate(0px, 0px)}
-  to {transform: rotate(-45deg) translate(-10px, 20px)}
-}
+// @keyframes lineone{
+//   from {transform: rotate(0deg) translate(0px, 0px)}
+//   to {transform: rotate(-45deg) translate(-10px, 20px)}
+// }
 
-@keyframes linetwo{
-  from {transform: rotate(0deg) translate(0px, 0px)}
-  to {transform: rotate(45deg) translate(-20px, -15px)}
-}
-
-
-.nav-line-1-active{
-  transform: rotate(-45deg) translate(-10px, 20px);
-}
-
-.nav-line-3-active{
-  transform: rotate(45deg) translate(-20px, -15px);
-}
-
-.nav-line-3-active{
-  display: none;
-}
+// @keyframes linetwo{
+//   from {transform: rotate(0deg) translate(0px, 0px)}
+//   to {transform: rotate(45deg) translate(-20px, -15px)}
+// }
 
 
+// .nav-line-1-active{
+//   transform: rotate(-45deg) translate(-10px, 20px);
+// }
 
-.dropdown-X-active{
-  display: none;
-}
+// .nav-line-3-active{
+//   transform: rotate(45deg) translate(-20px, -15px);
+// }
+
+// .nav-line-3-active{
+//   display: none;
+// }
+
+// .dropdown-X-active{
+//   display: none;
+// }

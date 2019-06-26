@@ -374,22 +374,15 @@ body {
   color: #ffffff;
   background-color: #b95503;
 }
-.dropdown .dropdown-hidden {
-  display: none;
+@keyframes displayNone {
+  from {
+    display: inherit;
+  }
+  to {
+    display: none;
+  }
 }
-.middle-line {
-  animation: disappearline;
-  animation-duration: 1s;
-}
-.lineone-translate {
-  animation: lineone;
-  animation-duration: 1s;
-}
-.linetwo-translate {
-  animation: linetwo;
-  animation-duration: 1s;
-}
-@keyframes disappearline {
+@keyframes fadeoutmenu {
   from {
     opacity: 1;
   }
@@ -397,33 +390,30 @@ body {
     opacity: 0;
   }
 }
-@keyframes lineone {
+@keyframes slideoutmenu {
   from {
-    transform: rotate(0deg) translate(0px, 0px);
+    transform: translate(-74%);
   }
   to {
-    transform: rotate(-45deg) translate(-10px, 20px);
+    transform: translate(0%);
   }
 }
-@keyframes linetwo {
+@keyframes fadeIn {
   from {
-    transform: rotate(0deg) translate(0px, 0px);
+    opacity: 1;
   }
   to {
-    transform: rotate(45deg) translate(-20px, -15px);
+    opacity: 0;
   }
 }
-.nav-line-1-active {
-  transform: rotate(-45deg) translate(-10px, 20px);
+.dropdown .dropdown-animation {
+  animation: displayNone;
+  animation: fadeIn 1s ease-in 0s 1 normal forwards;
+  animation: slideoutmenu;
+  animation-duration: 1s;
 }
-.nav-line-3-active {
-  transform: rotate(45deg) translate(-20px, -15px);
-}
-.nav-line-3-active {
-  display: none;
-}
-.dropdown-X-active {
-  display: none;
+.dropdown .dropdown-hidden {
+  opacity: 0;
 }
 .bottom-widgets {
   display: flex;
