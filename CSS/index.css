@@ -540,3 +540,33 @@ body {
   margin-left: 3%;
   margin-right: 3%;
 }
+.feature-page {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row;
+}
+.feature-page-box {
+  margin: 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column;
+  font-size: 2.3rem;
+  line-height: 2.7rem;
+}
+.features-img {
+  text-align: center;
+  font-size: 3rem;
+  line-height: 4rem;
+}
+.page-header {
+  font-size: 3rem;
+}
+.page-subheader {
+  font-size: 2.6rem;
+  color: #f7dd4b;
+}
+.copyright {
+  font-size: 2.2rem;
+}
