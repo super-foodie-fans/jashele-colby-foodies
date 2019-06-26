@@ -558,3 +558,19 @@ body {
   margin-left: 3%;
   margin-right: 3%;
 }
+.feature-page {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row;
+}
+.feature-page-box {
+  margin: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column;
+}
+.features-img {
+  text-align: center;
+}
