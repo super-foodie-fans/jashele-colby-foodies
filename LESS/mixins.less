@@ -73,6 +73,11 @@
         font-weight: 700;
         text-decoration: underline;
         font-size: 3.5rem;
+
+        @media @mobile{
+            font-size: 5rem;
+            padding-top: 10px;
+        }
     }
 
     .pricing-box{
@@ -82,7 +87,9 @@
         -webkit-box-shadow: 0px 0px 15px 5px rgba(255,225,119,1);
         -moz-box-shadow: 0px 0px 15px 5px rgba(255,225,119,1);
         box-shadow: 0px 0px 15px 5px rgba(255,225,119,1);
+        display: flex;
         flex-flow: column;
+        align-self: stretch;
         justify-content: space-between;
 
 

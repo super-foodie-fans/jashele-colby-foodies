@@ -156,13 +156,22 @@
     justify-content: center;
     margin-block-start: 0em;
     margin-block-end: 2em;
+
+    @media @mobile{
+      .mobile-margins;
+      text-align: center;
+    }
   }
 }
 
 .button-in-box{
   display: flex;
   justify-content: center;
-  flex-flow: column;
+  width: 90%;
+
+  @media @mobile{
+    padding-bottom: 30px;
+  }
 
   .add-to-cart-btn{
     background-color: #fa8755;
@@ -174,6 +183,10 @@
     font-weight: 800;
     margin: 10px;
     color: white;
+
+    @media @mobile{
+      font-size: 5rem;
+    }
   }
 
   .add-to-cart-btn:hover{

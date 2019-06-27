@@ -88,6 +88,12 @@
   text-decoration: underline;
   font-size: 3.5rem;
 }
+@media ( max-width: 500px ) {
+  .pricing-row .pricing-title {
+    font-size: 5rem;
+    padding-top: 10px;
+  }
+}
 .pricing-row .pricing-box {
   width: 30%;
   font-weight: 600;
@@ -95,7 +101,9 @@
   -webkit-box-shadow: 0px 0px 15px 5px #ffe177;
   -moz-box-shadow: 0px 0px 15px 5px #ffe177;
   box-shadow: 0px 0px 15px 5px #ffe177;
+  display: flex;
   flex-flow: column;
+  align-self: stretch;
   justify-content: space-between;
 }
 @media ( max-width: 500px ) {
@@ -298,44 +306,6 @@ body {
 @media ( max-width: 500px ) {
   .button-content {
     font-size: 5rem;
-    margin-left: 3%;
-    width: 90%;
-  }
-}
-.pricing-row {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
-  padding-bottom: 40px;
-}
-@media ( max-width: 500px ) {
-  .pricing-row {
-    display: flex;
-    flex-flow: column;
-  }
-}
-.pricing-row .pricing-title {
-  display: flex;
-  justify-content: center;
-  font-weight: 700;
-  text-decoration: underline;
-  font-size: 3.5rem;
-}
-.pricing-row .pricing-box {
-  width: 30%;
-  font-weight: 600;
-  font-size: 8rem;
-  -webkit-box-shadow: 0px 0px 15px 5px #ffe177;
-  -moz-box-shadow: 0px 0px 15px 5px #ffe177;
-  box-shadow: 0px 0px 15px 5px #ffe177;
-}
-@media ( max-width: 500px ) {
-  .pricing-row .pricing-box {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 0px;
     margin-left: 3%;
     width: 90%;
   }
@@ -722,10 +692,22 @@ body {
   margin-block-start: 0em;
   margin-block-end: 2em;
 }
+@media ( max-width: 500px ) {
+  .pricing-intro p {
+    margin-left: 3%;
+    width: 90%;
+    text-align: center;
+  }
+}
 .button-in-box {
   display: flex;
   justify-content: center;
-  flex-flow: column;
+  width: 90%;
+}
+@media ( max-width: 500px ) {
+  .button-in-box {
+    padding-bottom: 30px;
+  }
 }
 .button-in-box .add-to-cart-btn {
   background-color: #fa8755;
@@ -738,10 +720,18 @@ body {
   margin: 10px;
   color: white;
 }
+@media ( max-width: 500px ) {
+  .button-in-box .add-to-cart-btn {
+    font-size: 5rem;
+  }
+}
 .button-in-box .add-to-cart-btn:hover {
   background-color: #d80808;
   cursor: pointer;
 }
-.form {
-  font-size: 7rem;
+.contact-form {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  font-size: 3rem;
 }
