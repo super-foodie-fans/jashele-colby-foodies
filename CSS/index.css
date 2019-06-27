@@ -545,7 +545,7 @@ body {
   justify-content: space-between;
   flex-flow: row;
 }
-.feature-page-box {
+.feature-page .feature-page-box {
   margin: 1.5rem;
   width: 100%;
   display: flex;
@@ -555,18 +555,24 @@ body {
   font-size: 2.3rem;
   line-height: 2.7rem;
 }
+.feature-page .feature-name {
+  font-size: 2.6rem;
+  color: #f7dd4b;
+}
+.feature-page .page-stuff {
+  font-size: 4rem;
+  line-height: 2rem;
+}
+.feature-page features-text {
+  font-size: 3rem;
+}
 .features-img {
   text-align: center;
   font-size: 3rem;
   line-height: 4rem;
+  background-color: none;
+  width: 100%;
 }
-.page-header {
+.features-img .features-title {
   font-size: 3rem;
-}
-.page-subheader {
-  font-size: 2.6rem;
-  color: #f7dd4b;
-}
-.copyright {
-  font-size: 2.2rem;
 }
