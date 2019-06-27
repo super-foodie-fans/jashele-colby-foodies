@@ -1,15 +1,21 @@
 // subpage classes here
 
+
+// about page
+
 .about-us-content{
     font-size: 3rem;
     .mobile-margins;
 }
+
+// features page
 
 .features-intro{
   .features-title {
     font-size: 3rem;
     display: flex;
     justify-content: center;
+    color: rgb(247, 221, 75); 
   
     @media @mobile{
       font-size: 5rem;
@@ -28,6 +34,8 @@
     @media @mobile{
       font-size: 4rem;
       .mobile-margins;
+      text-align: center;
+
     }
   }
 }
@@ -85,6 +93,7 @@
       .mobile-font;
       .mobile-margins;
       line-height: 100%;
+      text-align: center;
     }
   }
 
@@ -101,3 +110,75 @@
 }
 
 
+// demo page
+
+.section-title{
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+.demo-preview{
+  img{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  p{
+    font-size: 3rem;
+
+    @media @mobile{
+      .mobile-font;
+      .mobile-margins;
+      text-align: center;
+    }
+  }
+}
+.OSsupport{
+  display: flex;
+  justify-content: center;
+  line-height: 50%;
+
+  .phone-icon{
+    font-size: 20rem;
+  }
+}
+
+
+// pricing page
+
+.pricing-intro{
+
+
+  p{
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    margin-block-start: 0em;
+    margin-block-end: 2em;
+  }
+}
+
+.button-in-box{
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+
+  .add-to-cart-btn{
+    background-color: #fa8755;
+    width: 100%;
+    border-radius: 25px;
+    font-size: 3rem;
+    margin: auto;
+    font-family: Karla;
+    font-weight: 800;
+    margin: 10px;
+    color: white;
+  }
+
+  .add-to-cart-btn:hover{
+    background-color: #d80808;
+    cursor: pointer;
+  }
+
+}
