@@ -21,7 +21,7 @@
 }
 .mobile-margins {
   margin-left: 3%;
-  margin-right: 3%;
+  width: 90%;
 }
 .mobile-flex {
   display: flex;
@@ -112,7 +112,7 @@ body {
 @media ( max-width: 500px ) {
   .three-ps {
     margin-left: 3%;
-    margin-right: 3%;
+    width: 90%;
     display: flex;
     flex-flow: column;
   }
@@ -147,7 +147,7 @@ body {
 @media ( max-width: 500px ) {
   .about-section-content {
     margin-left: 3%;
-    margin-right: 3%;
+    width: 90%;
     display: flex;
     flex-flow: column;
     font-size: 6rem;
@@ -179,7 +179,7 @@ body {
 @media ( max-width: 500px ) {
   .about-lists {
     margin-left: 3%;
-    margin-right: 3%;
+    width: 90%;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -219,7 +219,7 @@ body {
     width: 100%;
     font-size: 5rem;
     margin-left: 3%;
-    margin-right: 3%;
+    width: 90%;
     padding-bottom: 40px;
   }
 }
@@ -233,7 +233,7 @@ body {
   .button-section {
     font-size: 5rem;
     margin-left: 3%;
-    margin-right: 3%;
+    width: 90%;
   }
 }
 .button-section .live-demo-btn {
@@ -253,7 +253,7 @@ body {
   .button-content {
     font-size: 5rem;
     margin-left: 3%;
-    margin-right: 3%;
+    width: 90%;
   }
 }
 .pricing-row {
@@ -291,7 +291,7 @@ body {
     flex-direction: column;
     border-radius: 0px;
     margin-left: 3%;
-    margin-right: 3%;
+    width: 90%;
   }
 }
 .dropdown {
@@ -426,7 +426,7 @@ body {
 @media ( max-width: 500px ) {
   .bottom-widgets .contact-title {
     margin-left: 3%;
-    margin-right: 3%;
+    width: 90%;
     font-size: 5rem;
   }
 }
@@ -438,7 +438,7 @@ body {
 @media ( max-width: 500px ) {
   .bottom-widgets .contact-address-phone {
     margin-left: 3%;
-    margin-right: 3%;
+    width: 90%;
     font-size: 5rem;
     width: 100%;
   }
@@ -460,6 +460,11 @@ body {
 }
 .bottom-widgets .contact-address-phone address {
   font-size: 3rem;
+}
+@media ( max-width: 500px ) {
+  .bottom-widgets .contact-address-phone address {
+    font-size: 4rem;
+  }
 }
 .contact-address-phone a:link {
   text-decoration: none;
@@ -538,41 +543,98 @@ body {
 .about-us-content {
   font-size: 3rem;
   margin-left: 3%;
-  margin-right: 3%;
+  width: 90%;
+}
+.features-intro .features-title {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+}
+@media ( max-width: 500px ) {
+  .features-intro .features-title {
+    font-size: 5rem;
+  }
+}
+.features-intro img {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.features-intro p {
+  font-size: 2rem;
+}
+@media ( max-width: 500px ) {
+  .features-intro p {
+    font-size: 4rem;
+    margin-left: 3%;
+    width: 90%;
+  }
 }
 .feature-page {
   display: flex;
   justify-content: space-between;
   flex-flow: row;
+  width: 100%;
+}
+@media ( max-width: 500px ) {
+  .feature-page {
+    display: flex;
+    flex-flow: column;
+    margin-left: 3%;
+    width: 90%;
+  }
 }
 .feature-page .feature-page-box {
-  margin: 1.5rem;
-  width: 100%;
-  display: flex;
+  width: 32%;
   justify-content: space-between;
   align-items: center;
   flex-flow: column;
   font-size: 2.3rem;
   line-height: 2.7rem;
 }
+@media ( max-width: 500px ) {
+  .feature-page .feature-page-box {
+    width: 100%;
+    margin-left: 3%;
+    width: 90%;
+  }
+}
 .feature-page .feature-name {
   font-size: 2.6rem;
   color: #f7dd4b;
-}
-.feature-page .page-stuff {
-  font-size: 4rem;
-  line-height: 2rem;
-}
-.feature-page features-text {
-  font-size: 3rem;
-}
-.features-img {
-  text-align: center;
-  font-size: 3rem;
-  line-height: 4rem;
-  background-color: none;
   width: 100%;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  display: flex;
+  justify-content: center;
 }
-.features-img .features-title {
-  font-size: 3rem;
+@media ( max-width: 500px ) {
+  .feature-page .feature-name {
+    font-size: 4rem;
+  }
+}
+.feature-page .features-text {
+  font-size: 2.6rem;
+  width: 100%;
+  margin-block-start: 0em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+@media ( max-width: 500px ) {
+  .feature-page .features-text {
+    font-size: 4rem;
+    margin-left: 3%;
+    width: 90%;
+    line-height: 100%;
+  }
+}
+.feature-page .feature-img {
+  display: flex;
+  justify-content: space-between;
+}
+.feature-page .feature-img img {
+  width: 100%;
 }
