@@ -68,14 +68,15 @@
     
 
      <div class="contact-form">
+    <div class="name-area">
+        <label for="firstname">First Name&nbsp;</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">&nbsp;&nbsp;&nbsp;&nbsp;
     
-        <label for="firstname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-    
-        <label for="lname">Last Name</label>
+        <label for="lname">Last Name&nbsp;</label>
         <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-    
-        <label for="state">State</label>
+    </div><br>
+    <div class="state-select">
+        <label for="state">State&nbsp;</label>
         <select id="state" name="state">
             <option value="AL">Alabama</option>
             <option value="AK">Alaska</option>
@@ -130,9 +131,9 @@
             <option value="WY">Wyoming</option>
           </select>
         </select>
-    
-        <label for="comment">Subject</label>
-        <textarea id="comment" name="comment" placeholder="Write something.."></textarea>
+    </div><br>
+        <label for="comment">Comment</label>
+        <textarea id="comment" name="comment" style="height:300px" placeholder="Write something.."></textarea>
     
         <input type="submit" value="Submit">
     

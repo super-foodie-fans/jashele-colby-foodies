@@ -732,6 +732,36 @@ body {
 .contact-form {
   display: flex;
   justify-content: center;
-  width: 50%;
-  font-size: 3rem;
+  flex-flow: column;
+  width: 100%;
+  font-size: 5rem;
+}
+@media ( max-width: 500px ) {
+  .contact-form {
+    margin-left: 3%;
+    width: 90%;
+  }
+}
+.contact-form .name-area {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+.contact-form .state-select {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  font-size: 5rem;
+}
+.contact-form textarea {
+  font-family: Karla;
+}
+.contact-form input[type=submit] {
+  margin-bottom: 40px;
+  margin-top: 10px;
+  background-color: #FFD02B;
+}
+.contact-form input[type=submit]:hover {
+  background-color: #d80808;
+  cursor: pointer;
 }

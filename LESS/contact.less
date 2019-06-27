@@ -1,8 +1,40 @@
 .contact-form{
     display: flex;
     justify-content: center;
-    width: 50%;
-    font-size: 3rem;
+    flex-flow: column;
+    width: 100%;
+    font-size: 5rem;
 
-    
+        @media @mobile{
+            .mobile-margins;
+        }
+
+    .name-area{
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        
+    }
+
+    .state-select{
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        font-size: 5rem;
+    }
+
+    textarea{
+        font-family: Karla;
+    }
+
+    input[type=submit]{
+        margin-bottom: 40px;
+        margin-top: 10px;
+        background-color: #FFD02B;
+    }
+
+    input[type=submit]:hover{
+        background-color: #d80808;
+        cursor: pointer;
+    }
 }
