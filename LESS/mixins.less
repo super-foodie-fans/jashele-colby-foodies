@@ -2,7 +2,7 @@
 
 .mobile-margins{
     margin-left: 3%;
-    margin-right: 3%;
+    width: 90%;
 }
 
 .mobile-flex{
@@ -38,4 +38,68 @@
     height: 450px;
     overflow: hidden;
     width:900px;
+}
+
+.live-demo-btn{
+    background-color: #fa8755;
+    width: 50%;
+    padding: 20px;
+    border-radius: 25px;
+    margin: auto;
+    font-size: 3rem;
+    font-family: Karla;
+    font-weight: 800;
+
+    @media @mobile{
+        width:100%;
+        font-size: 5rem;
+    }
+ }   
+
+
+ .pricing-row{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding-bottom: 40px;
+
+    @media @mobile{
+        .mobile-flex;
+    }
+
+    .pricing-title{
+        display:flex;
+        justify-content: center;
+        font-weight: 700;
+        text-decoration: underline;
+        font-size: 3.5rem;
+
+        @media @mobile{
+            font-size: 5rem;
+            padding-top: 10px;
+        }
+    }
+
+    .pricing-box{
+        width: 30%;
+        font-weight: 600;
+        font-size: 8rem;
+        -webkit-box-shadow: 0px 0px 15px 5px rgba(255,225,119,1);
+        -moz-box-shadow: 0px 0px 15px 5px rgba(255,225,119,1);
+        box-shadow: 0px 0px 15px 5px rgba(255,225,119,1);
+        display: flex;
+        flex-flow: column;
+        align-self: stretch;
+        justify-content: space-between;
+
+
+        @media @mobile{
+            width:100%;
+            display:flex;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 0px;
+            .mobile-margins;
+        }
+    }
 }
