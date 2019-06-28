@@ -49,9 +49,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 450px;
   overflow: hidden;
-  width: 900px;
+  width: 100%;
 }
 .live-demo-btn {
   background-color: #fa8755;
@@ -130,6 +129,11 @@ body {
   width: 900px;
   margin: auto;
   font-family: Karla;
+}
+@media ( max-width: 500px ) {
+  body {
+    width: 500px;
+  }
 }
 .header {
   font-size: 10.5rem;
