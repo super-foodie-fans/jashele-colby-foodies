@@ -43,7 +43,7 @@
 
 .three-ps{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 
     @media @mobile{
         .mobile-margins;
@@ -52,12 +52,21 @@
         .three-p-title{
             font-style: normal;
             font-weight: normal;
-            font-size: 4rem;
-            text-align: center;
+            font-size: 3.5rem;
             color: #FA8755;
+            text-align: center;
 
             @media @mobile{
                 font-size:7rem;
+                text-align: center;
+            }
+        }
+
+        .three-p-box{
+            width: 32%;
+
+            @media @mobile{
+                width: 100%;
             }
         }
 
@@ -65,10 +74,10 @@
             font-style: normal;
             font-weight: normal;
             font-size: 2rem;
-            text-align: center;
 
             @media @mobile{
                 .mobile-font;
+                text-align: center;
             }
         }
 }
@@ -87,6 +96,11 @@
         width:50%;
         justify-content: space-between;
         font-weight: 600;
+    }
+    .features-img{
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
 }
 
@@ -129,6 +143,7 @@
     }
 }
 
+
 .feature-row{
     display: flex;
     justify-content: space-between;
@@ -151,6 +166,12 @@
             font-size:5rem;
             .mobile-margins;
             padding-bottom: 40px;
+        }
+
+        p a{
+            color:  #FA8755;
+            font-size: 2rem;
+            text-decoration: none;
         }
     }
 }
