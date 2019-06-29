@@ -6,7 +6,7 @@
 }
 
 .container{
-    max-width: 90%;
+    max-width: 95%;
     margin: 0 auto;
 }
 
@@ -25,10 +25,14 @@ body{
 
 
 .header{
-    font-size: 10.5rem;
+    font-size: 8.5rem;
     background: #FFD02B;
     display: flex;
     justify-content: space-between;
+
+    @media @mobile{
+        font-size: 6rem;
+    }
 
     .foodie-text{
         font-family: Podkova;
