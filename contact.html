@@ -10,7 +10,7 @@
    <!-- <script src="index.js" async></script> -->
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="shortcut icon" href="images/pancakes.jpeg" />
-   <link rel="stylesheet" type="text/css" href="css\all.min.css">
+   <link rel = "stylesheet" href = "CSS\all.min.css" />
    <meta name="description" content="Food Portfolio">
    <meta name="keywords" content="Food,Recipes,Chef,Eat,Mobile,Apps,Lambda">
    <meta name="author" content="Jashele Tillman & Colby Howell">
@@ -69,15 +69,14 @@
 
      <div class="contact-form">
     <div class="name-area">
-        <label for="firstname">First Name&nbsp;</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">&nbsp;&nbsp;&nbsp;&nbsp;
-    
-        <label for="lname">Last Name&nbsp;</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-    </div><br>
+        <input type="text" id="fname" name="firstname" placeholder="FIRST NAME"><br>
+    </div>
+    <div class="name-area">
+        <input type="text" id="lname" name="lastname" placeholder="LAST NAME">
+    </div>
     <div class="state-select">
-        <label for="state">State&nbsp;</label>
-        <select id="state" name="state">
+        <select id="state" name="state" label="STATE">
+            <option selected disabled>-- STATE --</option>
             <option value="AL">Alabama</option>
             <option value="AK">Alaska</option>
             <option value="AZ">Arizona</option>
@@ -131,9 +130,8 @@
             <option value="WY">Wyoming</option>
           </select>
         </select>
-    </div><br>
-        <label for="comment">Comment</label>
-        <textarea id="comment" name="comment" style="height:300px" placeholder="Write something.."></textarea>
+    </div>
+        <textarea id="comment" name="comment" style="height:300px" placeholder="WRITE SOMETHING"></textarea>
     
         <input type="submit" value="Submit">
     
