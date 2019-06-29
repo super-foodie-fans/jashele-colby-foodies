@@ -53,7 +53,6 @@
   width: 100%;
 }
 .live-demo-btn {
-  background-color: #fa8755;
   width: 50%;
   padding: 20px;
   border-radius: 25px;
@@ -61,6 +60,10 @@
   font-size: 3rem;
   font-family: Karla;
   font-weight: 800;
+  color: white; 
+  -webkit-box-shadow: inset 90px 200px 119px -83px rgba(194,96,64,1);
+  -moz-box-shadow: inset 90px 200px 119px -83px rgba(194,96,64,1);
+  box-shadow: inset 90px 200px 119px -83px rgba(194,96,64,1);
 }
 @media ( max-width: 500px ) {
   .live-demo-btn {
@@ -76,6 +79,10 @@
   flex-flow: row;
   justify-content: space-between;
   padding-bottom: 40px;
+}
+.pricing-info {
+  font-size: .4em;
+  line-height: 2em;
 }
 @media ( max-width: 500px ) {
   .pricing-row {
@@ -100,13 +107,15 @@
   width: 30%;
   font-weight: 600;
   font-size: 8rem;
-  -webkit-box-shadow: 0px 0px 15px 5px #ffe177;
-  -moz-box-shadow: 0px 0px 15px 5px #ffe177;
-  box-shadow: 0px 0px 15px 5px #ffe177;
+  -webkit-box-shadow: inset 17px -200px 119px -83px rgba(194,96,64,1);
+  -moz-box-shadow: inset 17px -200px 119px -83px rgba(194,96,64,1);
+  box-shadow: inset 17px -200px 119px -83px rgba(194,96,64,1);
   display: flex;
   flex-flow: column;
   align-self: stretch;
   justify-content: space-between;
+  border-radius: .2em;
+  padding: .2em;
 }
 @media ( max-width: 500px ) {
   .pricing-row .pricing-box {
@@ -118,6 +127,7 @@
     margin-left: 3%;
     width: 90%;
   }
+
 }
 * {
   font-size: 62.5%;
@@ -504,39 +514,41 @@ body {
   }
 }
 .bottom-widgets .contact-title {
-  font-size: 3rem;
+  font-size: 5rem;
   font-weight: 700;
+  line-height: 2em;
 }
 @media ( max-width: 500px ) {
   .bottom-widgets .contact-title {
     margin-left: 3%;
     width: 90%;
     font-size: 5rem;
+
   }
 }
 .bottom-widgets .contact-address-phone {
   text-decoration: none;
   text-decoration-color: #FFD02B;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 @media ( max-width: 500px ) {
   .bottom-widgets .contact-address-phone {
     margin-left: 3%;
     width: 90%;
-    font-size: 5rem;
     width: 100%;
   }
   .bottom-widgets .contact-address-phone address {
-    font-size: 5rem;
+    font-size: 1em;
   }
   .bottom-widgets .contact-address-phone a:link {
-    font-size: 5rem;
+    font-size: 3rem;
   }
   .bottom-widgets .contact-address-phone a:hover {
     font-size: 5rem;
   }
 }
 .bottom-widgets .contact-address-phone a:link {
+  font-size: .8em;
   color: #FFD02B;
 }
 .bottom-widgets .contact-address-phone a:hover {
@@ -553,14 +565,14 @@ body {
 .contact-address-phone a:link {
   text-decoration: none;
   color: #FFD02B;
-  font-size: 3rem;
 }
 .nav-bottom {
   display: flex;
   flex-flow: column;
   text-decoration: none;
-  font-size: 6rem;
   padding-top: 35px;
+  line-height: 1em;
+  font-size: 5rem;
 }
 @media ( max-width: 500px ) {
   .nav-bottom {
