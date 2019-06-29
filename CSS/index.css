@@ -53,7 +53,6 @@
   width: 100%;
 }
 .live-demo-btn {
-  background-color: #fa8755;
   width: 50%;
   padding: 20px;
   border-radius: 25px;
@@ -61,6 +60,11 @@
   font-size: 3rem;
   font-family: Karla;
   font-weight: 800;
+  color: white; 
+
+  -webkit-box-shadow: inset 0px -110px 84px -12px rgba(184,51,51,1);
+-moz-box-shadow: inset 0px -110px 84px -12px rgba(184,51,51,1);
+box-shadow: inset 0px -110px 84px -12px rgba(184,51,51,1);
 }
 @media ( max-width: 500px ) {
   .live-demo-btn {
@@ -88,7 +92,7 @@
   justify-content: center;
   font-weight: 700;
   text-decoration: underline;
-  font-size: 3.5rem;
+  font-size: 4rem;
 }
 @media ( max-width: 500px ) {
   .pricing-row .pricing-title {
@@ -99,14 +103,20 @@
 .pricing-row .pricing-box {
   width: 30%;
   font-weight: 600;
-  font-size: 8rem;
-  -webkit-box-shadow: 0px 0px 15px 5px #ffe177;
-  -moz-box-shadow: 0px 0px 15px 5px #ffe177;
-  box-shadow: 0px 0px 15px 5px #ffe177;
+  font-size: 3em;
   display: flex;
   flex-flow: column;
   align-self: stretch;
   justify-content: space-between;
+  -webkit-box-shadow: inset 0px -110px 84px -12px rgba(148,41,41,1);
+  -moz-box-shadow: inset 0px -110px 84px -12px rgba(148,41,41,1);
+  box-shadow: inset 0px -110px 84px -12px rgba(148,41,41,1);
+  border-radius: 4em;
+  padding: 10px;
+}
+.pricing-info {
+  font-size: 4em;
+  line-height: 3em;
 }
 @media ( max-width: 500px ) {
   .pricing-row .pricing-box {
@@ -118,9 +128,10 @@
     margin-left: 3%;
     width: 90%;
   }
+ 
 }
 * {
-  font-size: 62.5%;
+  font-size: 60%;
   box-sizing: border-box;
 }
 .container {
@@ -194,7 +205,7 @@ body {
 .three-ps {
   display: flex;
   justify-content: space-between;
-  padding: 2em;
+  padding: 3em;
 }
 @media ( max-width: 500px ) {
   .three-ps {
@@ -219,7 +230,7 @@ body {
 }
 .three-ps .three-p-box {
   width: 32%;
-  padding: 0.5em;
+  padding: 1em;
   border-radius: 1em;
   -webkit-box-shadow: inset -28px -46px 84px -12px #704141;
   -moz-box-shadow: inset -28px -46px 84px -12px #704141;
@@ -246,6 +257,8 @@ body {
 .about-section-content {
   width: 100%;
   font-size: 3rem;
+  line-height: 1.4em;
+  text-align: center;
 }
 @media ( max-width: 500px ) {
   .about-section-content {
@@ -256,15 +269,18 @@ body {
     font-size: 3rem;
   }
 }
+.about-section-content p strong {
+  font-size: 4rem;
+}
 .about-section-content .about-section-points {
   width: 50%;
   justify-content: space-between;
   font-weight: 600;
 }
 .about-section-content .features-img {
-  display: flex;
-  justify-content: center;
-  width: 100%;
+  margin: auto;
+  display: block;
+  width: 70%;
 }
 .features-section {
   justify-content: space-between;
@@ -283,6 +299,7 @@ body {
   width: 50%;
   margin: auto;
   font-size: 6rem;
+  line-height: 1em;
 }
 @media ( max-width: 500px ) {
   .about-lists {
@@ -307,6 +324,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-flow: row;
+  padding: 1em;
 }
 @media ( max-width: 500px ) {
   .feature-row {
@@ -321,6 +339,12 @@ body {
   align-items: center;
   flex-flow: column;
   font-size: 3rem;
+  line-height: 1.3em;
+  padding: 1em;
+  border-radius: 1em;
+  -webkit-box-shadow: inset -28px -110px 84px -12px #451717;
+  -moz-box-shadow: inset -28px -110px 84px -12px #451717;
+  box-shadow: inset -28px -110px 84px -12px #451717;
 }
 @media ( max-width: 500px ) {
   .feature-row .feature-box {
@@ -351,6 +375,7 @@ body {
 }
 .button-content {
   font-size: 4rem;
+  line-height: 1.4em;
 }
 @media ( max-width: 500px ) {
   .button-content {
@@ -487,6 +512,8 @@ body {
 .bottom-widgets .contact-title {
   font-size: 3rem;
   font-weight: 700;
+  font-size: 4rem;
+  line-height: 2em;
 }
 @media ( max-width: 500px ) {
   .bottom-widgets .contact-title {
@@ -495,11 +522,13 @@ body {
     font-size: 5rem;
   }
 }
+
 .bottom-widgets .contact-address-phone {
   text-decoration: none;
   text-decoration-color: #FFD02B;
-  font-size: 3rem;
+  font-size: 2rem;
 }
+ 
 @media ( max-width: 500px ) {
   .bottom-widgets .contact-address-phone {
     margin-left: 3%;
@@ -508,10 +537,10 @@ body {
     width: 100%;
   }
   .bottom-widgets .contact-address-phone address {
-    font-size: 5rem;
+    font-size: 1rem;
   }
   .bottom-widgets .contact-address-phone a:link {
-    font-size: 5rem;
+    font-size: 1rem;
   }
   .bottom-widgets .contact-address-phone a:hover {
     font-size: 5rem;
@@ -519,6 +548,7 @@ body {
 }
 .bottom-widgets .contact-address-phone a:link {
   color: #FFD02B;
+  font-size: 2rem;
 }
 .bottom-widgets .contact-address-phone a:hover {
   color: #FEFBDD;
@@ -541,6 +571,7 @@ body {
   flex-flow: column;
   text-decoration: none;
   font-size: 6rem;
+  line-height: 1em;
   padding-top: 35px;
 }
 @media ( max-width: 500px ) {

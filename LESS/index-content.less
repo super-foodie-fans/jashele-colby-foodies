@@ -32,7 +32,7 @@
 .three-ps{
     display: flex;
     justify-content: space-between;
-    padding: 2em;
+    padding: 3em;
 
     @media @mobile{
         .mobile-margins;
@@ -53,11 +53,12 @@
 
         .three-p-box{
             width: 32%;
-            padding: .5em;
+            padding: 1em;
             border-radius: 1em;
             -webkit-box-shadow: inset -28px -46px 84px -12px rgba(112,65,65,1);
 -moz-box-shadow: inset -28px -46px 84px -12px rgba(112,65,65,1);
 box-shadow: inset -28px -46px 84px -12px rgba(112,65,65,1);
+        
 
             @media @mobile{
                 width: 100%;
@@ -81,11 +82,17 @@ box-shadow: inset -28px -46px 84px -12px rgba(112,65,65,1);
 .about-section-content{
     width: 100%;
     font-size:3rem;
+    line-height: 1.4em; 
+    text-align: center;
 
     @media @mobile{
         .mobile-margins;
         .mobile-flex;
         font-size: 3rem;
+    }
+
+    p strong {
+        font-size: 4rem;
     }
 
     .about-section-points{
@@ -94,9 +101,9 @@ box-shadow: inset -28px -46px 84px -12px rgba(112,65,65,1);
         font-weight: 600;
     }
     .features-img{
-        display: flex;
-        justify-content: center;
-        width: 100%;
+        margin: auto; 
+        display: block;
+        width: 70%;
     }
 }
 
@@ -120,6 +127,7 @@ box-shadow: inset -28px -46px 84px -12px rgba(112,65,65,1);
     width:50%;
     margin: auto;
     font-size:6rem;
+    line-height: 1em;
 
     @media @mobile{
         .mobile-margins;
@@ -144,6 +152,7 @@ box-shadow: inset -28px -46px 84px -12px rgba(112,65,65,1);
     display: flex;
     justify-content: space-between;
     flex-flow: row;
+    padding: 1em;
 
     @media @mobile{
         .mobile-flex;  
@@ -156,6 +165,13 @@ box-shadow: inset -28px -46px 84px -12px rgba(112,65,65,1);
         align-items: center;
         flex-flow: column;
         font-size:3rem;
+        line-height: 1.3em;
+            padding: 1em;
+            border-radius: 1em;
+
+            -webkit-box-shadow: inset -28px -110px 84px -12px rgba(69,23,23,1);
+            -moz-box-shadow: inset -28px -110px 84px -12px rgba(69,23,23,1);
+            box-shadow: inset -28px -110px 84px -12px rgba(69,23,23,1);
 
         @media @mobile{
             width: 100%;
@@ -186,6 +202,7 @@ box-shadow: inset -28px -46px 84px -12px rgba(112,65,65,1);
 
 .button-content{
     font-size:4rem;
+    line-height: 1.4em;
 
     @media @mobile{
         font-size:5rem;
