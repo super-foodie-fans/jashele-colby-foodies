@@ -124,7 +124,7 @@
   box-sizing: border-box;
 }
 .container {
-  max-width: 90%;
+  max-width: 95%;
   margin: 0 auto;
 }
 body {
@@ -141,10 +141,15 @@ body {
   }
 }
 .header {
-  font-size: 10.5rem;
+  font-size: 8.5rem;
   background: #FFD02B;
   display: flex;
   justify-content: space-between;
+}
+@media ( max-width: 500px ) {
+  .header {
+    font-size: 6rem;
+  }
 }
 .header .foodie-text {
   font-family: Podkova;
@@ -644,8 +649,6 @@ body {
 @media ( max-width: 500px ) {
   .feature-page .feature-page-box {
     width: 100%;
-    margin-left: 3%;
-    width: 90%;
   }
 }
 .feature-page .feature-name {
@@ -661,7 +664,7 @@ body {
 }
 @media ( max-width: 500px ) {
   .feature-page .feature-name {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 }
 .feature-page .features-text {
@@ -675,8 +678,6 @@ body {
 @media ( max-width: 500px ) {
   .feature-page .features-text {
     font-size: 4rem;
-    margin-left: 3%;
-    width: 90%;
     line-height: 100%;
     text-align: center;
   }
@@ -775,14 +776,19 @@ body {
 }
 .contact-form .name-area {
   display: flex;
-  flex-flow: row;
   justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  width: 100%;
 }
 .contact-form .state-select {
   display: flex;
   flex-flow: row;
   justify-content: center;
   font-size: 5rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
 }
 .contact-form textarea {
   font-family: Karla;
