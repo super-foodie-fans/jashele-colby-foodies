@@ -4,22 +4,6 @@
     max-width: 1000px;
     margin: auto; 
 
-    // @media @media930 {
-    //     max-width: 800px;
-    // }
-    // @media @media880{
-    //    max-width: 700px;
-    //     background-color: green; 
-    // }
-    // @media @media670 {
-    //     max-width: 670px;
-    //     background-color: yellow; 
-    // }
-    // @media @name {
-    //     max-width: 400px;
-    //     background-color: blue; 
-    // }
-
 }
 
 
@@ -32,6 +16,11 @@
     color: #F9D96A;
     padding-top: 10px;
     padding-bottom: 10px;
+
+    @media @mobile {
+        font-size: 4.1rem;
+        padding: 10px;
+    }
 }
 
 .divider-lines{
@@ -43,6 +32,7 @@
 .three-ps{
     display: flex;
     justify-content: space-between;
+    padding: 2em;
 
     @media @mobile{
         .mobile-margins;
@@ -56,13 +46,18 @@
             text-align: center;
 
             @media @mobile{
-                font-size:7rem;
+                font-size:4rem;
                 text-align: center;
             }
         }
 
         .three-p-box{
             width: 32%;
+            padding: .5em;
+            border-radius: 1em;
+            -webkit-box-shadow: inset -28px -46px 84px -12px rgba(112,65,65,1);
+-moz-box-shadow: inset -28px -46px 84px -12px rgba(112,65,65,1);
+box-shadow: inset -28px -46px 84px -12px rgba(112,65,65,1);
 
             @media @mobile{
                 width: 100%;
@@ -73,6 +68,8 @@
             font-style: normal;
             font-weight: normal;
             font-size: 2rem;
+            line-height: 2em;
+            text-align: center;
 
             @media @mobile{
                 .mobile-font;
@@ -88,7 +85,7 @@
     @media @mobile{
         .mobile-margins;
         .mobile-flex;
-        font-size: 6rem;
+        font-size: 3rem;
     }
 
     .about-section-points{

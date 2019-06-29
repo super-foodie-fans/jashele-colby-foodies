@@ -28,7 +28,7 @@
   flex-flow: column;
 }
 .mobile-font {
-  font-size: 4rem;
+  font-size: 2rem;
 }
 .section-title {
   font-family: 'Oleo Script', cursive;
@@ -180,6 +180,12 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+@media ( max-width: 500px ) {
+  .section-title {
+    font-size: 4.1rem;
+    padding: 10px;
+  }
+}
 .divider-lines {
   width: 100%;
   height: 15px;
@@ -188,6 +194,7 @@ body {
 .three-ps {
   display: flex;
   justify-content: space-between;
+  padding: 2em;
 }
 @media ( max-width: 500px ) {
   .three-ps {
@@ -206,12 +213,17 @@ body {
 }
 @media ( max-width: 500px ) {
   .three-ps .three-p-title {
-    font-size: 7rem;
+    font-size: 4rem;
     text-align: center;
   }
 }
 .three-ps .three-p-box {
   width: 32%;
+  padding: 0.5em;
+  border-radius: 1em;
+  -webkit-box-shadow: inset -28px -46px 84px -12px #704141;
+  -moz-box-shadow: inset -28px -46px 84px -12px #704141;
+  box-shadow: inset -28px -46px 84px -12px #704141;
 }
 @media ( max-width: 500px ) {
   .three-ps .three-p-box {
@@ -222,10 +234,12 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: 2rem;
+  line-height: 2em;
+  text-align: center;
 }
 @media ( max-width: 500px ) {
   .three-ps .three-p-text {
-    font-size: 4rem;
+    font-size: 2rem;
     text-align: center;
   }
 }
@@ -239,7 +253,7 @@ body {
     width: 90%;
     display: flex;
     flex-flow: column;
-    font-size: 6rem;
+    font-size: 3rem;
   }
 }
 .about-section-content .about-section-points {
@@ -514,7 +528,7 @@ body {
 }
 @media ( max-width: 500px ) {
   .bottom-widgets .contact-address-phone address {
-    font-size: 4rem;
+    font-size: 2rem;
   }
 }
 .contact-address-phone a:link {
@@ -665,7 +679,7 @@ body {
 }
 @media ( max-width: 500px ) {
   .feature-page .feature-name {
-    font-size: 4rem;
+    font-size: 2rem;
   }
 }
 .feature-page .features-text {
@@ -678,7 +692,7 @@ body {
 }
 @media ( max-width: 500px ) {
   .feature-page .features-text {
-    font-size: 4rem;
+    font-size: 2rem;
     margin-left: 3%;
     width: 90%;
     line-height: 100%;
@@ -706,7 +720,7 @@ body {
 }
 @media ( max-width: 500px ) {
   .demo-preview p {
-    font-size: 4rem;
+    font-size: 2rem;
     margin-left: 3%;
     width: 90%;
     text-align: center;
