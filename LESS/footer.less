@@ -11,24 +11,28 @@
     }
     
     .contact-title{
-        font-size: 3rem;
+        font-size: 4rem;
         font-weight: 700;
+        line-height: 3em;
 
         @media @mobile{
             .mobile-margins;
-            font-size: 5rem;
+            font-size: 3rem;
+            line-height: 2em;
         }
     }
 
     .contact-address-phone{
         text-decoration: none;
         text-decoration-color: #FFD02B;
-        font-size: 3rem;
+        font-size: 2rem;
 
         @media @mobile{
             .mobile-margins;
-            font-size: 5rem;
+            font-size: 2rem;
             width:100%;
+          
+            line-height: 1em;
 
 
             address{
@@ -36,7 +40,7 @@
             }
 
             a:link{
-                font-size: 5rem;
+                font-size: 2rem;
             }
 
             a:hover{
@@ -56,7 +60,9 @@
             font-size:3rem;
 
             @media @mobile{
-                .mobile-font;
+                // .mobile-font;
+                font-size: 1em;
+                line-height: 1em;
             }
         }
     }
@@ -65,7 +71,7 @@
 .contact-address-phone a:link{
     text-decoration: none;
     color: #FFD02B;
-    font-size: 3rem;
+    font-size: 2rem;
 
 }
 
@@ -73,8 +79,9 @@
     display: flex;
     flex-flow: column;
     text-decoration: none;
-    font-size:6rem;
+    font-size:4rem;
     padding-top: 35px;
+    line-height: 1.5em;
 
     @media @mobile{
         display: none;
@@ -99,5 +106,10 @@
     justify-content: center;
     padding-top: 50px;
     padding-bottom: 20px;
-    font-size: 3rem;
+    font-size: 7em;
+
+    @media @mobile {
+        font-size: 7em;
+    }
 }
+
