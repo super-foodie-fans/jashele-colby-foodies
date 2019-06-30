@@ -119,13 +119,13 @@
 }
 @media ( max-width: 500px ) {
   .pricing-row .pricing-box {
-    width: 100%;
+    margin: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
-    border-radius: 0px;
     margin-top: 20px;
     width: 90%;
+    padding: 1em;
   }
 }
 * {
@@ -344,7 +344,6 @@ body {
     display: flex;
     flex-flow: column;
     font-size: 4rem;
-    margin: auto;
     width: 100%;
   }
 }
@@ -364,9 +363,9 @@ body {
 }
 @media ( max-width: 500px ) {
   .feature-row .feature-box {
-    font-size: 2rem;
-    margin-top: 20px;
-    width: 90%;
+    width: 100%;
+    font-size: 2.5rem;
+    margin: 8px;
     padding-bottom: 40px;
     line-height: 2em;
     text-align: center;
@@ -476,7 +475,7 @@ body {
 }
 @media ( max-width: 500px ) {
   .dropdown .dropdown-link {
-    font-size: 6rem;
+    font-size: 2rem;
   }
 }
 .dropdown .dropdown-link:hover {
@@ -537,7 +536,8 @@ body {
   .bottom-widgets .contact-title {
     margin-top: 20px;
     width: 90%;
-    font-size: 5rem;
+    font-size: 3rem;
+    line-height: 2em;
   }
 }
 .bottom-widgets .contact-address-phone {
@@ -549,8 +549,9 @@ body {
   .bottom-widgets .contact-address-phone {
     margin-top: 20px;
     width: 90%;
-    font-size: 5rem;
+    font-size: 2rem;
     width: 100%;
+    line-height: 1em;
   }
   .bottom-widgets .contact-address-phone address {
     font-size: 5rem;
@@ -573,7 +574,8 @@ body {
 }
 @media ( max-width: 500px ) {
   .bottom-widgets .contact-address-phone address {
-    font-size: 2rem;
+    font-size: 1em;
+    line-height: 1em;
   }
 }
 .contact-address-phone a:link {
@@ -609,6 +611,11 @@ body {
   padding-top: 50px;
   padding-bottom: 20px;
   font-size: 3rem;
+}
+@media ( max-width: 500px ) {
+  .copyright {
+    font-size: 7em;
+  }
 }
 .carousel {
   display: flex;
