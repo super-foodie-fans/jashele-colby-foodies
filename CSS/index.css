@@ -53,7 +53,6 @@
   width: 100%;
 }
 .live-demo-btn {
-  background-color: #fa8755;
   width: 50%;
   padding: 20px;
   border-radius: 25px;
@@ -61,6 +60,11 @@
   font-size: 3rem;
   font-family: Karla;
   font-weight: 800;
+  -webkit-box-shadow: inset 1px 185px 243px -75px #fa4b00;
+  -moz-box-shadow: inset 1px 185px 243px -75px #fa4b00;
+  box-shadow: inset 1px 185px 243px -75px #fa4b00;
+  color: white;
+  cursor: pointer;
 }
 @media ( max-width: 500px ) {
   .live-demo-btn {
@@ -69,7 +73,9 @@
   }
 }
 .live-demo-btn:hover {
-  background-color: #d80808;
+  -webkit-box-shadow: inset 1px 185px 136px -28px #fa4b00;
+  -moz-box-shadow: inset 1px 185px 136px -28px #fa4b00;
+  box-shadow: inset 1px 185px 136px -28px #fa4b00;
 }
 .pricing-row {
   display: flex;
@@ -99,14 +105,17 @@
 .pricing-row .pricing-box {
   width: 30%;
   font-weight: 600;
-  font-size: 8rem;
-  -webkit-box-shadow: 0px 0px 15px 5px #ffe177;
-  -moz-box-shadow: 0px 0px 15px 5px #ffe177;
-  box-shadow: 0px 0px 15px 5px #ffe177;
+  font-size: 4rem;
+  line-height: 1em;
   display: flex;
   flex-flow: column;
   align-self: stretch;
   justify-content: space-between;
+  border-radius: 1em;
+  padding: 1em;
+  -webkit-box-shadow: inset 1px 185px 136px -28px #a34444;
+  -moz-box-shadow: inset 1px 185px 136px -28px #a34444;
+  box-shadow: inset 1px 185px 136px -28px #a34444;
 }
 @media ( max-width: 500px ) {
   .pricing-row .pricing-box {
@@ -520,8 +529,9 @@ body {
   }
 }
 .bottom-widgets .contact-title {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 700;
+  line-height: 3em;
 }
 @media ( max-width: 500px ) {
   .bottom-widgets .contact-title {
@@ -533,7 +543,7 @@ body {
 .bottom-widgets .contact-address-phone {
   text-decoration: none;
   text-decoration-color: #FFD02B;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 @media ( max-width: 500px ) {
   .bottom-widgets .contact-address-phone {
@@ -546,7 +556,7 @@ body {
     font-size: 5rem;
   }
   .bottom-widgets .contact-address-phone a:link {
-    font-size: 5rem;
+    font-size: 2rem;
   }
   .bottom-widgets .contact-address-phone a:hover {
     font-size: 5rem;
@@ -569,14 +579,15 @@ body {
 .contact-address-phone a:link {
   text-decoration: none;
   color: #FFD02B;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .nav-bottom {
   display: flex;
   flex-flow: column;
   text-decoration: none;
-  font-size: 6rem;
+  font-size: 4rem;
   padding-top: 35px;
+  line-height: 1.5em;
 }
 @media ( max-width: 500px ) {
   .nav-bottom {

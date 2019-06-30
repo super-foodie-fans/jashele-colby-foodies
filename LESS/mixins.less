@@ -41,7 +41,6 @@
 }
 
 .live-demo-btn{
-    background-color: #fa8755;
     width: 50%;
     padding: 20px;
     border-radius: 25px;
@@ -49,8 +48,11 @@
     font-size: 3rem;
     font-family: Karla;
     font-weight: 800;
-
-
+    -webkit-box-shadow: inset 1px 185px 243px -75px rgba(250,75,0,1);
+-moz-box-shadow: inset 1px 185px 243px -75px rgba(250,75,0,1);
+box-shadow: inset 1px 185px 243px -75px rgba(250,75,0,1);
+    color: white;
+    cursor: pointer;
 
     @media @mobile{
         width:80%;
@@ -59,7 +61,9 @@
  }   
 
  .live-demo-btn:hover {
-    background-color:#d80808;
+    -webkit-box-shadow: inset 1px 185px 136px -28px rgba(250,75,0,1);
+-moz-box-shadow: inset 1px 185px 136px -28px rgba(250,75,0,1);
+box-shadow: inset 1px 185px 136px -28px rgba(250,75,0,1);
     }
 
 
@@ -89,15 +93,19 @@
     .pricing-box{
         width: 30%;
         font-weight: 600;
-        font-size: 8rem;
-        -webkit-box-shadow: 0px 0px 15px 5px rgba(255,225,119,1);
-        -moz-box-shadow: 0px 0px 15px 5px rgba(255,225,119,1);
-        box-shadow: 0px 0px 15px 5px rgba(255,225,119,1);
+        font-size: 4rem;
+        line-height: 1em;
         display: flex;
         flex-flow: column;
         align-self: stretch;
         justify-content: space-between;
+        border-radius: 1em;
+        padding: 1em;
+        -webkit-box-shadow: inset 1px 185px 136px -28px rgba(163,68,68,1);
+-moz-box-shadow: inset 1px 185px 136px -28px rgba(163,68,68,1);
+box-shadow: inset 1px 185px 136px -28px rgba(163,68,68,1);;
 
+        
 
         @media @mobile{
             width:100%;
@@ -108,4 +116,7 @@
             .mobile-margins;
         }
     }
+
+ 
+
 }
